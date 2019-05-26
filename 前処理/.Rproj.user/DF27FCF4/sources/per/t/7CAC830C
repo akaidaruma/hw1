@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1558806680761.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "7CAC830C",
+    "lastKnownWriteTime" : 4294967297,
+    "last_content_update" : 1558806680761,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "237182D6",
+        "caption" : "hyoa",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=hyoa&cache_key=237182D6",
+        "displayedObservations" : 72412,
+        "environment" : "",
+        "object" : "hyoa",
+        "preview" : 0,
+        "totalObservations" : 72412,
+        "variables" : 2
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

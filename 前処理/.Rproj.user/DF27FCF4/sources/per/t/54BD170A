@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1558803523192.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1757646819",
+    "id" : "54BD170A",
+    "lastKnownWriteTime" : 1558853305,
+    "last_content_update" : 1558853305005,
+    "path" : "~/work/arihon/STEP/CLASS1/前処理/make_dictionary.R",
+    "project_path" : "make_dictionary.R",
+    "properties" : {
+        "cursorPosition" : "11,59",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
