@@ -1,6 +1,7 @@
 library(stringr)
 library(magrittr)
 test <- read.csv("dictionary.csv", stringsAsFactors = FALSE)
+hyoa_test <- read.csv("master_dictionary.csv", stringsAsFactors = FALSE)
 
 for (i in 1:nrow(test)) {
   a <- strsplit(test$Word[i], "") %>% as.data.frame() 
