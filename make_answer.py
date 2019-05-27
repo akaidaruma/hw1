@@ -31,8 +31,7 @@ def make_kouho(pannel, num):
     return kouho
 
 def word_exists(wordlist, word_fragment, answerlist, scorelist):
-    # ここのエラーbisectがわかってなくて出てる感ある
-    if bisect_left(wordlist, word_fragment) != len(wordlist):
+    if bisect_left(wordlist, word_fragment) != len(wordlist): #エラー避けのif文(よくわかってない)
         if wordlist[bisect_left(wordlist, word_fragment)] == word_fragment:
             if ans[bisect_left(wordlist, word_fragment)] not in answerlist:
                 scorelist.append((calc_score(word_fragment)))
@@ -41,7 +40,6 @@ def word_exists(wordlist, word_fragment, answerlist, scorelist):
 
 def make_word(pannel):
     for i in range(16, 1, -1):
-        #print("=========" + str(i)+ "=========")
         kouholist = make_kouho(pannel, i)
         for kouho in kouholist:
             word_exists(wordlist, kouho, answerlist, scorelist)
