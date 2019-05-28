@@ -2,7 +2,7 @@ import pandas as pd
 import itertools
 from bisect import bisect_left
 
-dictionary = pd.read_csv('master_dictionary.csv')
+dictionary = pd.read_csv('master_dictionary_nonU.csv')
 wordlist = list(dictionary['Changed'])
 ans = list(dictionary['Word'])
 
@@ -25,9 +25,7 @@ def calc_score(word_fragment):
 def make_kouho(pannel, num):
     kouho = []
     for x in itertools.combinations(pannel, num):
-        #後で直す　Qをskip
-        if 'q' not in x:
-            kouho.append(''.join(x))
+        kouho.append(''.join(x))
     return kouho
 
 def word_exists(wordlist, word_fragment, answerlist, scorelist):
