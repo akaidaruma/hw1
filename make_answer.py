@@ -29,11 +29,12 @@ def make_kouho(pannel, num):
     return kouho
 
 def word_exists(wordlist, word_fragment, answerlist, scorelist):
-    if bisect_left(wordlist, word_fragment) != len(wordlist): #エラー避けのif文(よくわかってない)
-        if wordlist[bisect_left(wordlist, word_fragment)] == word_fragment:
-            if ans[bisect_left(wordlist, word_fragment)] not in answerlist:
+    position = bisect_left(wordlist, word_fragment)
+    if position != len(wordlist): #エラー避けのif文(よくわかってない)
+        if wordlist[position] == word_fragment:
+            if ans[position] not in answerlist:
                 scorelist.append((calc_score(word_fragment)))
-                answerlist.append(ans[bisect_left(wordlist, word_fragment)])
+                answerlist.append(ans[position])
             return answerlist, scorelist           
 
 def make_word(pannel):
